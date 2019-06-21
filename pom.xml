@@ -7,7 +7,7 @@
 
 	<groupId>com.github.seeker</groupId>
 	<artifactId>common-hash</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>common-hash</name>
@@ -213,10 +213,32 @@
 				<artifactId>awaitility-groovy</artifactId>
 				<version>2.0.0</version>
 			</dependency>
+			<dependency>
+				<groupId>com.aparapi</groupId>
+				<artifactId>aparapi</artifactId>
+				<version>1.9.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aparapi</groupId>
+				<artifactId>aparapi-jni</artifactId>
+				<version>1.4.1</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.aparapi</groupId>
+			<artifactId>aparapi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.aparapi</groupId>
+			<artifactId>aparapi-jni</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
