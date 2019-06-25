@@ -3,7 +3,7 @@
  * Copyright (c) 2019 Nicholas Wright
  * http://opensource.org/licenses/MIT
  */
-package com.github.seeker.gpu.kernel;
+package com.github.seeker.commonhash.perceptual.phash.kernel;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
@@ -17,6 +17,7 @@ import org.junit.Test;
 import com.aparapi.device.Device;
 import com.aparapi.device.JavaDevice;
 import com.aparapi.device.OpenCLDevice;
+import com.github.seeker.commonhash.perceptual.phash.kernel.DCTKernel;
 import com.google.common.base.Stopwatch;
 
 public class DCTKernelBenchmark1 {

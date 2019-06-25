@@ -3,7 +3,7 @@
  * Copyright (c) 2019 Nicholas Wright
  * http://opensource.org/licenses/MIT
  */
-package com.github.seeker.gpu.kernel;
+package com.github.seeker.commonhash.perceptual.phash.kernel;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertArrayEquals;
@@ -13,6 +13,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.github.seeker.commonhash.perceptual.phash.kernel.DCTKernel;
 import com.google.common.primitives.Doubles;
 
 public class DCTKernelTest {

@@ -223,6 +223,11 @@
 				<artifactId>aparapi-jni</artifactId>
 				<version>1.4.1</version>
 			</dependency>
+			<dependency>
+				<groupId>com.github.dozedoff.commonj</groupId>
+				<artifactId>commonj</artifactId>
+				<version>0.3.3</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -238,6 +243,10 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.dozedoff.commonj</groupId>
+			<artifactId>commonj</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>

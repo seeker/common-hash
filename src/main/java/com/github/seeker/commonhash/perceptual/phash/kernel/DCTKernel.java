@@ -3,7 +3,7 @@
  * Copyright (c) 2019 Nicholas Wright
  * http://opensource.org/licenses/MIT
  */
-package com.github.seeker.gpu.kernel;
+package com.github.seeker.commonhash.perceptual.phash.kernel;
 
 import com.aparapi.Kernel;
 import com.aparapi.Range;
