@@ -1,0 +1,15 @@
+sudo: false
+language: java
+
+jobs:
+  include:
+    - script: mvn test -Droot-level="WARN"
+      after_success:
+        - mvn jacoco:report-aggregate coveralls:report
+        - bash <(curl -s https://codecov.io/bash) 
+      jdk:
+        - oraclejdk8
+        - oraclejdk11
+        - oraclejdk12
+        - openjdk8
+        - openjdk11
