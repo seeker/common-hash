@@ -5,7 +5,7 @@ jobs:
   include:
     - script: mvn test -Droot-level="WARN"
       after_success:
-        - mvn jacoco:report-aggregate coveralls:report
+        - mvn jacoco:report
         - bash <(curl -s https://codecov.io/bash) 
       jdk:
         - oraclejdk8
