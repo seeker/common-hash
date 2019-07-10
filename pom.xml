@@ -14,13 +14,6 @@
 	<description>Collection of hashing algorithms</description>
 	<url>https://github.com/seeker/common-hash</url>
 
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -221,9 +214,9 @@
 				<version>1.4.1</version>
 			</dependency>
 			<dependency>
-				<groupId>com.github.seeker</groupId>
+				<groupId>com.github.seeker.commonj</groupId>
 				<artifactId>commonj</artifactId>
-				<version>0.3.2</version>
+				<version>0.3.3</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -242,7 +235,7 @@
 			<artifactId>guava</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.github.seeker</groupId>
+			<groupId>com.github.seeker.commonj</groupId>
 			<artifactId>commonj</artifactId>
 		</dependency>
 		<dependency>
