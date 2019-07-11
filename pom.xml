@@ -163,7 +163,7 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>25.0-jre</version>
+				<version>28.0-jre</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.jimfs</groupId>
@@ -173,12 +173,12 @@
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.12</version>
+				<version>4.13-beta-3</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mockito</groupId>
 				<artifactId>mockito-core</artifactId>
-				<version>2.15.0</version>
+				<version>3.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hamcrest</groupId>
@@ -198,7 +198,7 @@
 			<dependency>
 				<groupId>nl.jqno.equalsverifier</groupId>
 				<artifactId>equalsverifier</artifactId>
-				<version>1.7.5</version>
+				<version>3.1.9</version>
 			</dependency>
 			<dependency>
 				<groupId>com.googlecode.junit-toolbox</groupId>
@@ -208,12 +208,12 @@
 			<dependency>
 				<groupId>org.awaitility</groupId>
 				<artifactId>awaitility-groovy</artifactId>
-				<version>2.0.0</version>
+				<version>3.1.6</version>
 			</dependency>
 			<dependency>
 				<groupId>com.aparapi</groupId>
 				<artifactId>aparapi</artifactId>
-				<version>1.9.0</version>
+				<version>1.10.0</version>
 			</dependency>
 			<dependency>
 				<groupId>com.aparapi</groupId>
