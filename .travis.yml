@@ -1,7 +1,7 @@
 sudo: false
 language: java
 
-script: mvn test -Droot-level="WARN"
+script: mvn verify -Droot-level="WARN"
 after_success:
   - mvn jacoco:report
   - bash <(curl -s https://codecov.io/bash)
