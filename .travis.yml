@@ -13,3 +13,4 @@ jobs:
         - oraclejdk12
         - openjdk8
         - openjdk11
+        - openjdk12
