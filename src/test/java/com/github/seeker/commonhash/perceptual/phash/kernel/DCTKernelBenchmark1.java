@@ -21,7 +21,7 @@ import com.github.seeker.commonhash.perceptual.phash.kernel.DCTKernel;
 import com.google.common.base.Stopwatch;
 
 public class DCTKernelBenchmark1 {
-	private static final int SAMPLE_SIZE = 1000;
+	private static final int SAMPLE_SIZE = 10000;
 	private static double[][] samples;
 	private static double[][] resultCpu;
 	private static double[][] resultJtp;
