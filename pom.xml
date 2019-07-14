@@ -14,6 +14,38 @@
 	<description>Collection of hashing algorithms</description>
 	<url>https://github.com/seeker/common-hash</url>
 
+	<licenses>
+		<license>
+			<name>mit</name>
+			<url>https://choosealicense.com/licenses/mit/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Nicholas Wright</name>
+			<email>dozedoffagain@gmail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git:github.com:seeker/common-hash.git</connection>
+		<developerConnection>scm:git:ssh:github.com:seeker/common-hash.git</developerConnection>
+		<url>https://github.com/seeker/common-hash/tree/master</url>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
