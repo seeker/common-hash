@@ -1,7 +1,8 @@
 sudo: false
 language: java
 
-script: mvn verify -Droot-level="WARN"
+# Skip JavaDoc for CI due to issues with modules in Java 11 & 12
+script: mvn verify -Droot-level="WARN" -Dmaven.javadoc.skip=true
 after_success:
   - mvn jacoco:report
   - bash <(curl -s https://codecov.io/bash)
