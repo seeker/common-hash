@@ -329,6 +329,12 @@
 				<artifactId>imgscalr-lib</artifactId>
 				<version>4.2</version>
 			</dependency>
+			<dependency>
+			    <groupId>com.github.wendykierp</groupId>
+			    <artifactId>JTransforms</artifactId>
+			    <version>3.1</version>
+			    <classifier>with-dependencies</classifier>
+			 </dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -393,5 +399,10 @@
 				<groupId>org.imgscalr</groupId>
 				<artifactId>imgscalr-lib</artifactId>
 		</dependency>
+		<dependency>
+		    <groupId>com.github.wendykierp</groupId>
+		    <artifactId>JTransforms</artifactId>
+		    <classifier>with-dependencies</classifier>
+		 </dependency>
 	</dependencies>
 </project>
