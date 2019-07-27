@@ -22,6 +22,7 @@ import javax.imageio.ImageIO;
 import org.imgscalr.Scalr;
 import org.imgscalr.Scalr.Method;
 import org.imgscalr.Scalr.Mode;
+import org.jtransforms.dct.DoubleDCT_2D;
 
 import com.github.dozedoff.commonj.util.ImageUtil;
 import com.github.seeker.commonhash.helper.TransformHelper;
@@ -39,6 +40,7 @@ public class ImagePHash {
 	private int resizedImageSize = 0;
 	private int dctMatrixSize = 0;
 	private TransformHelper transformHelper;
+	private final DoubleDCT_2D jtransformDCT;
 
 	/**
 	 * Create a default hasher for images with a size of 32x32.
@@ -58,6 +60,7 @@ public class ImagePHash {
 	public ImagePHash(int resizedImageSize, int dctMatrixSize) {
 		this.resizedImageSize = resizedImageSize;
 		this.dctMatrixSize = dctMatrixSize;
+		this.jtransformDCT = new DoubleDCT_2D(resizedImageSize, resizedImageSize);
 
 		// TODO validate parameters
 
@@ -157,7 +160,8 @@ public class ImagePHash {
 		 * 3. Compute the DCT. The DCT separates the image into a collection of frequencies and scalars. While JPEG uses an 8x8 DCT, this
 		 * algorithm uses a 32x32 DCT.
 		 */
-		double[][] dctMap = transformHelper.transformDCT(reducedColorValues);
+		jtransformDCT.forward(reducedColorValues, true);
+		double[][] dctMap = reducedColorValues;
 
 		return dctMap;
 	}
