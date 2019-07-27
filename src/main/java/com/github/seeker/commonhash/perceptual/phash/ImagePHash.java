@@ -19,7 +19,10 @@ import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 
-import com.github.dozedoff.commonj.util.Bits;
+import org.imgscalr.Scalr;
+import org.imgscalr.Scalr.Method;
+import org.imgscalr.Scalr.Mode;
+
 import com.github.dozedoff.commonj.util.ImageUtil;
 import com.github.seeker.commonhash.helper.TransformHelper;
 
@@ -131,7 +134,7 @@ public class ImagePHash {
 		 * 1. Reduce size. Like Average Hash, pHash starts with a small image. However, the image is larger than 8x8; 32x32 is a good size.
 		 * This is really done to simplify the DCT computation and not because it is needed to reduce the high frequencies.
 		 */
-		img = ImageUtil.resizeImage(img, resizedImageSize, resizedImageSize);
+		img = Scalr.resize(img, Method.SPEED, Mode.FIT_EXACT, resizedImageSize);
 		return calculateDctMapScaledDown(img);
 	}
 
