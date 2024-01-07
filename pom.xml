@@ -7,7 +7,7 @@
 
 	<groupId>com.github.seeker.commonhash</groupId>
 	<artifactId>common-hash</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>common-hash</name>
@@ -324,6 +324,17 @@
 				<artifactId>commonj</artifactId>
 				<version>0.3.3</version>
 			</dependency>
+			<dependency>
+				<groupId>org.imgscalr</groupId>
+				<artifactId>imgscalr-lib</artifactId>
+				<version>4.2</version>
+			</dependency>
+			<dependency>
+			    <groupId>com.github.wendykierp</groupId>
+			    <artifactId>JTransforms</artifactId>
+			    <version>3.1</version>
+			    <classifier>with-dependencies</classifier>
+			 </dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -384,5 +395,14 @@
 			<artifactId>awaitility-groovy</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+				<groupId>org.imgscalr</groupId>
+				<artifactId>imgscalr-lib</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>com.github.wendykierp</groupId>
+		    <artifactId>JTransforms</artifactId>
+		    <classifier>with-dependencies</classifier>
+		 </dependency>
 	</dependencies>
 </project>
