@@ -99,7 +99,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-failsafe-plugin</artifactId>
-					<version>3.0.0-M3</version>
+					<version>3.2.3</version>
 					<executions>
 						<execution>
 							<id>integration-test</id>
@@ -113,7 +113,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.0.0-M3</version>
+					<version>3.2.3</version>
 					<configuration>
 						<parallel>methods</parallel>
 						<threadCount>10</threadCount>
@@ -126,7 +126,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-pmd-plugin</artifactId>
-					<version>3.12.0</version>
+					<version>3.21.2</version>
 					<configuration>
 						<includeTests>true</includeTests>
 						<minimumTokens>50</minimumTokens>
@@ -144,7 +144,7 @@
 				<plugin>
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>0.8.4</version>
+					<version>0.8.11</version>
 					<executions>
 						<execution>
 							<goals>
@@ -155,7 +155,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.1</version>
+					<version>3.12.1</version>
 					<configuration>
 						<source>${jdk-version}</source>
 						<target>${jdk-version}</target>
@@ -171,7 +171,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.1.2</version>
+				<version>3.3.0</version>
 				<!-- nothing here -->
 			</plugin>
 			<plugin>
@@ -191,7 +191,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>3.3.1</version>
 				<configuration>
 					<configLocation>checkstyle.xml</configLocation>
 					<propertiesLocation>checkstyle_maven.properties</propertiesLocation>
@@ -222,7 +222,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>3.3.0</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -253,7 +253,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
-				<version>3.0.0-M1</version>
+				<version>3.1.1</version>
 			</plugin>
 		</plugins>
 	</build>
